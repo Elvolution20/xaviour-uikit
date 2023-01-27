@@ -1,12 +1,12 @@
-import React, { Children, isValidElement, cloneElement, useRef, useEffect, useState, useMemo, useReducer, useCallback, createContext, useContext } from 'react';
-import styled, { keyframes, css, useTheme, createGlobalStyle } from 'styled-components';
-import { space, flexbox, layout } from 'styled-system';
+import debounce from 'lodash/debounce';
 import get from 'lodash/get';
 import noop from 'lodash/noop';
-import debounce from 'lodash/debounce';
 import throttle from 'lodash/throttle';
+import React, { Children, cloneElement, createContext, isValidElement, useCallback, useContext, useEffect, useMemo, useReducer, useRef, useState } from 'react';
 import { Link as Link$1, NavLink, useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import styled, { createGlobalStyle, css, keyframes, useTheme } from 'styled-components';
+import { flexbox, layout, space } from 'styled-system';
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -2852,9 +2852,9 @@ var templateObject_1$K;
 
 var baseColors = {
     failure: "#ED4B9E",
-    primary: "#aa8929",
-    primaryBright: "#aa8929",
-    primaryDark: "#aa8929",
+    primary: "#945af8",
+    primaryBright: "#945af8",
+    primaryDark: "#945af8",
     secondary: "#7645D9",
     success: "#31D0AA",
     warning: "#FFB237",
